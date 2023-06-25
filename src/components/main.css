@@ -66,7 +66,7 @@
     grid-template-rows: 0.10fr auto;
     grid-template-areas: "name1 name1 name1"
     
-    "..... main....";
+    "itm1 main itm2";
     /* border: 2px solid blue; */
     /* gap: 10px; */
     /* padding: 20px; */
@@ -75,6 +75,46 @@
     background-size: contain; */
     background-color: black;
 }
+
+.griditem1{
+  grid-area: itm1;
+  display: grid;
+  grid-template-rows: 92px 0.2fr 0.8fr ;
+  gap: 10px;
+}
+
+
+.griditem2{
+  grid-area: itm2;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  
+
+}
+.league{
+  /* border: 2px solid red; */
+}
+
+.k1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+ 
+  gap: 10px;
+  padding: 10px;
+}
+
+.l2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 
 .item1{
     /* border: 2px solid green; */
@@ -303,4 +343,51 @@
   }
    */
 
+   .k2{
+    border-bottom: 1px solid #444544;
+   }
 
+   .home-button {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: #00000000;
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;
+  
+  }
+  
+  .home-button:hover {
+    background-color: #8d8c8c53;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    /* Replace with the path to your home button icon */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    
+  }
+
+  .home{
+    background-image: url('./home.png'); 
+  }
+
+  .like{
+    background-image: url("./like.png");
+  }
+  
+  
+  
+  
+  
+  
+  

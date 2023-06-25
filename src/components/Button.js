@@ -1,12 +1,12 @@
 import React from 'react'
 import "./button.css"
 
-export default function Button() {
+export default function Button(props) {
   return (
     <>
-    <div className='tabs'>
-        name
-    </div>
+    <button className="explore-button">
+      <span>{props.title}</span>
+    </button>
     </>
   )
 }

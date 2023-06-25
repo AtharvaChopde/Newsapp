@@ -1,5 +1,22 @@
-.tabs{
+/* .tabs{
     
     background-color: white;
     color: black;
-}
+} */
+
+.explore-button {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: #1990DB;
+  }
+  

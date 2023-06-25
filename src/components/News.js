@@ -1,8 +1,10 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState,useEffect, useRef, useContext } from 'react'
 import NewsItem from './NewsItem'
 import "./Newsitem.css"
 import "./main.css"
 import Horizontalbar from './Horizontalbar'
+import SearchBox from './Searchbox'
+import Button from './Button'
 
 export default function News() {
 
@@ -1352,6 +1354,12 @@ export default function News() {
     // })
 
 
+    
+
+    
+    const alrf = ()=>{
+        alert("helo")
+    }
 
   return (
 
@@ -1372,7 +1380,39 @@ export default function News() {
 }
 
         </div> 
-    <div className="item1 name3">
+    <div className="item1 griditem1">
+    <div className="league 1"></div>
+    <div className="league k1 k2">
+        <a href="#" class="home-button">
+        <span class="icon home"></span>
+        Home
+        </a>
+        <a href="#" class="home-button">
+        <span class="icon like"></span>
+        Liked
+        </a>
+        </div>
+    <div className="league k1">
+    
+    </div>
+    <div className="league 1">
+
+    </div>
+    <div className="league 1">
+        
+    </div>
+    <div className="league 1"></div>
+
+    </div>
+
+    <div className="item1 griditem2">
+        <div className="league 1"></div>
+        <div className="league l2"><SearchBox  handle = {alrf}/></div>
+        <div className="league 3"></div>
+        <div className="league 4"></div>
+        <div className="league 5"></div>
+        <div className="league 6"></div>
+
 
     </div>
 
