@@ -1,0 +1,34 @@
+.horizontal-bar {
+    position: absolute;
+    left: 0;
+    top: 48.8%; /* Adjust the vertical position as desired */
+    width: 100%;
+    height: 100px; /* Adjust the height as desired */
+    background: rgba(28, 28, 28, 0.185);
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid #444544;
+    border-bottom: 1px solid #444544;
+   
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+
+
+  .horizontal-bar>h1{
+    padding: 20px;
+    color: white;
+    
+  }
+
+.anchor{
+     text-decoration: none;
+     color: inherit;
+}
+  
