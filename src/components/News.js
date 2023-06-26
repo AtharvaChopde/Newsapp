@@ -5,6 +5,7 @@ import "./main.css"
 import Horizontalbar from './Horizontalbar'
 import SearchBox from './Searchbox'
 import Button from './Button'
+import Whatshappening from './Whatshappening'
 
 export default function News() {
 
@@ -1393,15 +1394,11 @@ export default function News() {
         </a>
         </div>
     <div className="league k1">
+        <Whatshappening/>
     
     </div>
-    <div className="league 1">
-
-    </div>
-    <div className="league 1">
-        
-    </div>
-    <div className="league 1"></div>
+    
+  
 
     </div>
 

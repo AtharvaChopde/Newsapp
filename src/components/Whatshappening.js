@@ -1,13 +1,13 @@
 import React from 'react'
-import "./whatshappening.css"
+import "./happn.css"
 export default function Whatshappening() {
   return (
-    <div>
-        <h1>Whats Happening </h1>
+    <div className='happn'>
+        <p className='head'>Highlights of now</p>
         <div className="elem">
-            <h6>Title</h6>
+            <h4>Title</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, veritatis.</p>
-        </div>
+         </div>
     </div>
   )
 }
