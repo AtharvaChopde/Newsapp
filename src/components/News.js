@@ -5,7 +5,7 @@ import "./main.css"
 import Horizontalbar from './Horizontalbar'
 import SearchBox from './Searchbox'
 import Button from './Button'
-import Whatshappening from './Whatshappening'
+
 
 export default function News() {
 
@@ -1362,6 +1362,13 @@ export default function News() {
         alert("helo")
     }
 
+function visit (url) {
+
+    window.open(url)
+
+}
+
+
   return (
 
     <>
@@ -1393,8 +1400,26 @@ export default function News() {
         Liked
         </a>
         </div>
-    <div className="league k1">
-        <Whatshappening/>
+    <div className="league hppm">
+        <h1> Latest News </h1>
+        <div className="hppn1" onClick= {()=>{
+            window.open(news[0].url)
+        }}>
+        <div className="hppn2 hh">{news[0].title.slice(0,20)}</div>
+        <div className="hppn2 ll">{news[0].description.slice(0,40)}</div>
+        </div>
+        <div className="hppn1" onClick= {()=>{
+            window.open(news[1].url)
+        }}>
+        <div className="hppn2 hh">{news[1].title.slice(0,20)}</div>
+        <div className="hppn2 ll">{news[1].description.slice(0,40)}</div>
+        </div>
+        <div className="hppn1" onClick= {()=>{
+            window.open(news[2].url)
+        }}>
+        <div className="hppn2 hh">{news[2].title.slice(0,20)}</div>
+        <div className="hppn2 ll">{news[2].description.slice(0,40)}</div>
+        </div>
     
     </div>
     

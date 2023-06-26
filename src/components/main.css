@@ -74,6 +74,7 @@
     background-repeat: repeat;
     background-size: contain; */
     background-color: black;
+  
 }
 
 .griditem1{
@@ -95,6 +96,61 @@
 .league{
   /* border: 2px solid red; */
 }
+
+.hppm{
+  display: grid;
+  grid-template-rows: 1fr 25% 25% 25%;
+  color: white;
+  
+}
+
+.hppm>h1{
+  padding-left: 30px;
+}
+
+
+.hppn1{
+  display: grid;
+  grid-template-rows: 50% 50%;
+  /* border: 2px solid red; */
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.hppn2{
+  
+  padding: 10px;
+  /* border: 2px solid blue; */
+  
+}
+
+.hppn1:hover{
+  
+  background-color: #51515179;
+  transition: color 0.3s ease-in-out;
+  padding-left: 10px;
+  cursor: hand;
+  
+
+
+}
+
+
+.hh{
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  align-items: low;
+  
+  
+}
+
+.ll{
+  display: flex;
+  font-size: 15px;
+  
+}
+
 
 .k1{
   display: grid;
