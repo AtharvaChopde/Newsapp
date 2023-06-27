@@ -459,9 +459,12 @@
   .middle{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     gap: 20px;
     padding: 20px;
+    border-left: 1px solid #444544;
+    border-right: 1px solid #444544;
+   
     
     /* border: 2px solid salmon; */
     
@@ -547,3 +550,32 @@
     background-color: #28a9f5;
     cursor: pointer;
   } */
+
+.wrapper{
+  display: flex;
+  gap: 10px;
+}
+  .searchbox{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #1DA1F2;
+    border-radius: 9999px;
+    overflow: hidden;
+    height: 30px;
+  }
+
+ 
+
+  .searchbutn{
+    
+      background-color: #1DA1F2;
+      color: white;
+      border: none;
+      cursor: pointer;
+      width: 70px;
+      
+      border-radius: 9999px;
+      transition: background-color 0.3s ease;
+    
+  }

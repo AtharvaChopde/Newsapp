@@ -15,11 +15,11 @@ export default function Item1(props) {
         
       </div>
       <div className="info">
-        <h6>title</h6>
+        <h4>{props.title}</h4>
         <h6>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-          repudiandae eos odio! Esse, adipisci nulla et necessitatibus
-          voluptatem ea dolorem!
+         {
+          props.desc
+         }
         </h6>
       </div>
     </div>

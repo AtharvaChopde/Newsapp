@@ -3,14 +3,22 @@
     color: white;
     grid-template-rows: 1.9fr 0.1fr;
     align-items:auto;
+    border-radius: 30px;
+    
 }
 
+.article:hover{
+    background-color: rgba(83, 83, 85, 0.681);
+}
 
 .picture{
-    width: 100%;
-    height: auto;
-    border: 2px solid green;
-    overflow: hidden;
+   
+    border-radius: 30px;
+}
+
+.picture:hover{
+   
+    cursor: pointer;
 }
 
 
@@ -18,4 +26,12 @@
   
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    
 }
