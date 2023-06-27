@@ -8,7 +8,7 @@ export default function NewsItem(props) {
 <div class="card">
   
   <div className="photo">
-  <img src={props.photo} alt="Avatar" style={{width:"90%",}} />
+  <img src={props.photo} alt="Avatar" />
   </div>
   <div class="container">
     <h4><b>{props.title.slice(0,5)}</b></h4>

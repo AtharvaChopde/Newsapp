@@ -1357,7 +1357,27 @@ export default function News() {
 
     
 
-    
+   const [grid,setGrid] = useState(true);
+   const [stylem, setstylem] = useState("item1 main scrollable")
+
+   
+   
+   const switcher = ()=>{
+    if (grid)
+     {
+        setGrid(false)
+        setstylem("item1 scrollable middle")
+    }
+    else if (!grid) {
+        setGrid(true)
+        setstylem("item1 main scrollable")
+    }   
+   }
+
+
+
+  
+
     const alrf = ()=>{
         alert("helo")
     }
@@ -1369,6 +1389,8 @@ function visit (url) {
 }
 
 
+
+
   return (
 
     <>
@@ -1377,28 +1399,58 @@ function visit (url) {
     <h1>News.co</h1>
 
     </div>
-  <Horizontalbar/>
-    <div className="item1 main scrollable">
+
     {
+        grid?(
+            <Horizontalbar/>
+        ):
+       <></>
+
+
+    }
+  
+    <div className={stylem} id='maingrid'>
+    {/* {
   news.map((x, i) => (
     <div className="news-item" key={i}>
       <NewsItem photo={x.urlToImage} title={x.title} desc={x.description} />
     </div>
+
+
+
   ))
-}
+} */}
+
+{/* <NewsItem photo={news[0].urlToImage} title={news[0].title} desc={news[0].description} />
+
+<NewsItem photo={news[0].urlToImage} title={news[0].title} desc={news[0].description} />
+
+<NewsItem photo={news[0].urlToImage} title={news[0].title} desc={news[0].description} />
+
+<NewsItem photo={news[0].urlToImage} title={news[0].title} desc={news[0].description} /> */}
+
+<div className="r1"></div>
+<div className="r1"></div>
+<div className="r1"></div>
+<div className="r1"></div>
 
         </div> 
     <div className="item1 griditem1">
-    <div className="league 1"></div>
+    <div className="league 1 prev">
+    <div className="prev-button">
+        <span class="previous "></span>
+        Previous
+        </div>
+    </div>
     <div className="league k1 k2">
         <a href="#" class="home-button">
         <span class="icon home"></span>
         Home
         </a>
-        <a href="#" class="home-button">
+        <div className="home-button" onClick={switcher}>
         <span class="icon like"></span>
-        Liked
-        </a>
+        Switch
+        </div>
         </div>
     <div className="league hppm">
         <h1> Latest News </h1>
@@ -1428,7 +1480,19 @@ function visit (url) {
     </div>
 
     <div className="item1 griditem2">
-        <div className="league 1"></div>
+        <div className="league 1 prev">
+        
+    {/* <div className="prev-button">
+        <span class="previous icon2 frontic"></span>
+        Previous
+        </div> */}
+
+<div className="next-button">
+  Next
+  <span class="next"></span>
+</div>
+
+        </div>
         <div className="league l2"><SearchBox  handle = {alrf}/></div>
         <div className="league 3"></div>
         <div className="league 4"></div>

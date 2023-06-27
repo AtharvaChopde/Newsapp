@@ -88,7 +88,7 @@
 .griditem2{
   grid-area: itm2;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 92px 0.2fr 0.8fr;
 
   
 
@@ -247,6 +247,19 @@
    
     
 
+}
+
+.placeholder{
+  
+  grid-area: place;
+  
+  border: 2px solid red;
+}
+
+
+.place2{
+  grid-area: place2;
+  border: 2px solid red;
 }
 
 
@@ -443,7 +456,104 @@
   
   
   
+  .middle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid red;
+    gap: 20px;
+    
+    /* border: 2px solid salmon; */
+    
+  }
   
+  .r1{
+    border: 2px solid red;
+    
+
+  }
   
+  .prev{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid #444544 ;
+
+  }
   
+  .backic{
+    background-image: url('./back-button.png'); 
+
+  }
+
+  .frontic{
+    background-image: url('./back-button.png'); 
+  }
+
   
+  .prev-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: #00000000;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+  
+  }
+
+  .prev-button:hover {
+    background-color: #28a9f5;
+    cursor: pointer;
+  }
+  
+  /* .icon2 {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 8px;
+    transform: scaleX(-1);
+    
+  } */
+
+  .next-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: #00000000;
+    border-radius: 50px;
+    width: 200px;
+    height: 40px;
+    
+  }
+  
+  .icon2 {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    /* Replace with the path to your next button icon */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 8px;
+    transform: scaleX(-1);
+    margin-left: 50px; /* Apply the mirror effect */
+  }
+
+
+  
+  .next-button:hover {
+    background-color: #28a9f5;
+    cursor: pointer;
+  }
