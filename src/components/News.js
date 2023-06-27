@@ -5,6 +5,7 @@ import "./main.css"
 import Horizontalbar from './Horizontalbar'
 import SearchBox from './Searchbox'
 import Button from './Button'
+import Item1 from './Item1'
 
 
 export default function News() {
@@ -1429,18 +1430,39 @@ function visit (url) {
 
 <NewsItem photo={news[0].urlToImage} title={news[0].title} desc={news[0].description} /> */}
 
-<div className="r1"></div>
-<div className="r1"></div>
-<div className="r1"></div>
-<div className="r1"></div>
+<div className="r1">
+    <Item1/>
+</div>
+<div className="r1">
+<Item1  url = {news[3].urlToImage}/>
+</div>
+<div className="r1">
+<Item1/>
+</div>
+<div className="r1">
+<Item1/>
+</div>
 
         </div> 
     <div className="item1 griditem1">
     <div className="league 1 prev">
-    <div className="prev-button">
-        <span class="previous "></span>
-        Previous
-        </div>
+    {
+        !grid?(
+            <div className="prev-button">
+            Previous
+            </div>
+            
+        ):
+       <></>
+
+
+    }
+
+   
+
+
+
+
     </div>
     <div className="league k1 k2">
         <a href="#" class="home-button">
@@ -1482,15 +1504,19 @@ function visit (url) {
     <div className="item1 griditem2">
         <div className="league 1 prev">
         
-    {/* <div className="prev-button">
-        <span class="previous icon2 frontic"></span>
-        Previous
-        </div> */}
+   
 
-<div className="next-button">
-  Next
-  <span class="next"></span>
-</div>
+        {
+        !grid?(
+            <div className="prev-button">
+            Next
+            </div>
+            
+        ):
+       <></>
+
+
+    }
 
         </div>
         <div className="league l2"><SearchBox  handle = {alrf}/></div>

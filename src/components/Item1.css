@@ -1,0 +1,21 @@
+.article{
+    display: grid;
+    color: white;
+    grid-template-rows: 1.9fr 0.1fr;
+    align-items:auto;
+}
+
+
+.picture{
+    width: 100%;
+    height: auto;
+    border: 2px solid green;
+    overflow: hidden;
+}
+
+
+.backimg{
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+}

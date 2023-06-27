@@ -461,6 +461,7 @@
     grid-template-columns: 1fr 1fr;
     border: 2px solid red;
     gap: 20px;
+    padding: 20px;
     
     /* border: 2px solid salmon; */
     
@@ -523,7 +524,7 @@
     
   } */
 
-  .next-button {
+  /* .next-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -539,21 +540,10 @@
     
   }
   
-  .icon2 {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    /* Replace with the path to your next button icon */
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 8px;
-    transform: scaleX(-1);
-    margin-left: 50px; /* Apply the mirror effect */
-  }
-
+ 
 
   
   .next-button:hover {
     background-color: #28a9f5;
     cursor: pointer;
-  }
+  } */
