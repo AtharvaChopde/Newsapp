@@ -109,12 +109,53 @@ export default function News() {
     // })
 
 
-    
+
+    const pages = 8;
    const [search,setSearch] = useState("")
+   const [page,setPage]= useState("1")
    const [grid,setGrid] = useState(true);
-   const [stylem, setstylem] = useState("item1 main scrollable")
+   const [stylem, setstylem] = useState("item1 main scrollable");
+   const [country,setCountry] = useState("")
 
    const recents = []
+
+
+
+   const all = ()=>{
+    setCountry("")
+   }
+
+   const us = ()=>{
+    setCountry("us")
+    alert("us")
+   }
+
+   const jpn = ()=>{
+    setCountry("jp")
+   }
+   const rus = ()=>{
+    setCountry("ru")
+   }
+   
+   const fr = ()=>{
+    setCountry("fr")
+   }
+   
+
+
+
+   const Handlenext = ()=>{
+
+    if (page < pages) setPage(page+1);
+    setPage(pages)
+    
+   }
+
+
+   const Handleprev = ()=>{
+    if (page > 1) setPage(page-1)
+    setPage(1)
+   }
 
    const handleClick = ()=>{
     recents.push(search)
@@ -165,7 +206,36 @@ function visit (url) {
 
     {
         grid?(
-            <Horizontalbar/>
+            <>
+            {/* <Horizontalbar callwho = {country}/> */}
+           
+            <div class="horizontal-bar">
+   
+   <div className="btns">
+   <button className="explore-button" onClick={all}>
+      <span>All</span>
+    </button>
+    <button className="explore-button" onClick={us}>
+      <span>America</span>
+    </button>
+    <button className="explore-button" onClick={jpn}>
+      <span>Japan</span>
+    </button>
+    <button className="explore-button" onClick={rus}>
+      <span>Russia</span>
+    </button>
+    <button className="explore-button" onClick={fr}>
+      <span>France</span>
+    </button>
+     {/* <Button title = "America"/>
+     <Button title = "Japan"/>
+     <Button title = "Russia"/>
+     <Button title = "France"/>
+    */}
+   
+   </div>
+</div>
+            </>
         ):
        <></>
 
@@ -235,7 +305,7 @@ news.map((x, i) => (
     <div className="league 1 prev">
     {
         !grid?(
-            <div className="prev-button">
+            <div className="prev-button" onClick={Handleprev}>
             Previous
             </div>
             
@@ -310,7 +380,7 @@ news.map((x, i) => (
 
         {
         !grid?(
-            <div className="prev-button">
+            <div className="prev-button" onClick={Handlenext}>
             Next
             </div>
             

@@ -7,8 +7,8 @@ export default function Horizontalbar() {
     <div class="horizontal-bar">
    
     <div className="btns">
-    <Button title = "All"/>
-      <Button title = "America"/>
+    <Button  title = "All"/>
+      <Button title = "America" />
       <Button title = "Japan"/>
       <Button title = "Russia"/>
       <Button title = "France"/>
